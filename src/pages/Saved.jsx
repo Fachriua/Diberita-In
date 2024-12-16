@@ -1,4 +1,3 @@
-import React from "react";
 import { useSelector, useDispatch } from "react-redux";
 import { removeArticle } from "../store/reducer/News-Reducer";
 import Navbar from "../components/Navbar";

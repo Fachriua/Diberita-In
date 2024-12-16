@@ -31,10 +31,10 @@ function Indonesia() {
   return (
     <>
     <Navbar/>
-    <div className="container mx-auto px-20 py-6">
+    <div className="container overflow-x-hidden mx-auto px-4 sm:px-6 md:px-10 lg:px-20 py-6">
       <h1 className="text-lg">Berita Terbaru {query ? `: "${query}"` : "Indonesia"}</h1>
       <div className="h-1 my-3 bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500"></div>
-      <div className="grid grid-cols-4 gap-4">
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
         {news.slice(0, 8).map((article) => (
           <div key={article._id} className="col-span-1">
             <div className="card glass w-full h-full">

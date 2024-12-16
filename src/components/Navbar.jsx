@@ -16,7 +16,7 @@ function Navbar() {
   
 
   return (
-    <div className="navbar bg-base-200 h-20">
+    <div className="navbar bg-base-200 h-20 w-auto">
       <div className="navbar-start">
         <div className="dropdown">
           <div tabIndex={0} role="button" className="btn btn-ghost btn-circle">
@@ -62,7 +62,7 @@ function Navbar() {
               value={searchTerm}
               onChange={(e) => setSearchTerm(e.target.value)}
               placeholder="Search..."
-              className="input input-bordered"
+              className="input input-bordered w-20 lg:w-auto"
             />
             <button type="submit" className="btn btn-secondary">
               <svg

@@ -23,7 +23,7 @@ function Saved() {
   return (
     <>
       <Navbar />
-      <div className="container mx-auto px-20 py-6">
+      <div className="container overflow-x-hidden mx-auto px-4 sm:px-6 md:px-10 lg:px-20 py-6">
         <h1 className="text-lg">Saved Articles</h1>
         <div className="h-1 my-3 bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500"></div>
         <table className="table-auto w-full border-collapse border border-gray-300">

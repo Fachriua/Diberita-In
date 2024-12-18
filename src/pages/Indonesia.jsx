@@ -40,9 +40,9 @@ function Indonesia() {
               <figure>
                 <img
                   src={
-                    article.multimedia
+                    article.multimedia && article.multimedia.length > 0
                       ? `https://www.nytimes.com/${article.multimedia[0]?.url}`
-                      : "https://encr.pw/202ZS"
+                      : `https://png.pngtree.com/png-vector/20190820/ourmid/pngtree-no-image-vector-illustration-isolated-png-image_1694547.jpg`
                   }
                   alt={article.headline.main}
                   className="h-40 w-full object-cover"

@@ -33,15 +33,15 @@ function Programming() {
       <h1 className="text-lg">Berita Terbaru {query ? `: "${query}"` : "Programming"}</h1>
       <div className="h-1 my-3 bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500"></div>
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
-        {news.map((article) => (
+        {news.slice(0,8).map((article) => (
           <div key={article._id} className="col-span-1">
             <div className="card glass w-full h-full">
               <figure>
                 <img
                   src={
-                    article.multimedia
+                    article.multimedia && article.multimedia.length > 0
                       ? `https://www.nytimes.com/${article.multimedia[0]?.url}`
-                      : "https://via.placeholder.com/400"
+                      : `https://png.pngtree.com/png-vector/20190820/ourmid/pngtree-no-image-vector-illustration-isolated-png-image_1694547.jpg`
                   }
                   alt={article.headline.main}
                   className="h-40 w-full object-cover"

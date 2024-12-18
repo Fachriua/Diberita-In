@@ -38,9 +38,9 @@ function HasilSearch() {
                 <figure>
                   <img
                     src={
-                      article.multimedia
+                      article.multimedia && article.multimedia.length > 0
                         ? `https://www.nytimes.com/${article.multimedia[0]?.url}`
-                        : "https://via.placeholder.com/400"
+                        : `https://png.pngtree.com/png-vector/20190820/ourmid/pngtree-no-image-vector-illustration-isolated-png-image_1694547.jpg`
                     }
                     alt={article.headline.main}
                     className="h-40 w-full object-cover"
